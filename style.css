@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* custom css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "Roboto", sans-serif;
+    /* overflow-x: hidden !important; */
+}
+
+:root {
+    --background-color: #E9ECEF;
+    --bg-color-b: #000;
+    --bg-color-w: #fff;
+    --primary-color: #343A40;
+    --secondary-color: #212529;
+    --butn-color: #dc2f02;
+    --bg-color-g: #e1e1e1;
+    --bg-color-h: #1fabf2;
+    --text-color: #c2772c;
+    --heading-color: #780000;
+    --p-color: #22223b;
+    --gradient-color: radial-gradient(to right, #f9ce34, #ee2a7b,#6228d7);
+}
+
+body {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.all-butn {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1em;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: .5em;
+    line-height: 2.5rem;
+    padding: 0 2rem;
+    transform: all 300ms;
+    /* --webkit-transform: all 300ms; */
+    border: double .125rem transparent;
+}
+
+section {
+    padding: 5rem 0;
+}
+
+.main-butn {
+    background: var(--butn-color);
+    color: var(--bg-color-w);
+}
+
+.main-butn:hover {
+    border-color: var(--primary-color);
+    background: var(--bg-color-g);
+    color: var(--bg-color-b);
+}
+
+h1 {
+    font-size: 2.85em;
+    font-weight: 700;
+    color: var(--bg-color-b);
+    line-height: 3.2rem;
+    margin-bottom: 1.5rem;
+}
+
+
+h2 {
+    font-size: 2.263em;
+    font-weight: 500;
+    color: var(--text-color);
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 500;
+    color: var(--bg-color-b);
+    line-height: 2.1rem;
+    margin-bottom: .5rem;
+}
+
+p {
+    color: var(--p-color);
+    font-size: .8em;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+/* custom css */
+
+/* start navbar */
+
+.content-head .navbar {
+    padding: .2rem;
+    transition: all 200ms;
+}
+
+.content-head .navbar-brand img {
+    height: 60px;
+    max-width: 6em;
+}
+
+.content-head .navbar-brand span {
+    color: var(--bg-color-b);
+    font-weight: 700;
+}
+
+.content-head .nav-item {
+    margin: 0 .8em;
+}
+
+.content-head .nav-item .nav-link {
+    display: inline-block;
+    color: var(--bg-color-b);
+    text-transform: uppercase;
+    font-weight: 550;
+}
+
+.content-head .nav-item .nav-link:hover,
+.content-head .nav-item .nav-link:active {
+    color: var(--text-color);
+}
+
+/* close navbar */
+
+/* start profile section */
+
+.profile-content {
+    padding-top: 8rem;
+    z-index: 1;
+}
+
+.profile-content .profile-main {
+    vertical-align: middle;
+    align-self: center;
+}
+
+div .top-img{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.top-img>img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+h3 span {
+    color: var(--text-color);
+}
+
+.h-hov h1 {
+    color: var(--heading-color);
+    cursor: pointer;
+    /* transition:all .2s ease-in-out;  */
+}
+
+/* .h-hov h1:hover {
+    border-bottom: 6px solid var(--bg-color-b);
+    border-left: 8px solid var(--bg-color-b);
+    width: 22%;
+    color: var(--text-color);
+    border-radius: 10px;
+} */
+
+/* end profile section */
+
+/* start projects section */
+
+.projects-content .row .projects-img {
+    transition: all .5s ease-in-out;
+}
+
+.projects-content .row .projects-img:hover {
+    transform: translateY(-20px);
+}
+
+/* start projects section */
+
+/* start blog section */
+
+.blog-img img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 2px solid var(--bg-color-b);
+    /* object-fit: cover; */
+
+}
+
+.blog-img-2 img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 4.5rem;
+    border: 2px solid var(--bg-color-b);
+    /* margin-left: -2em; */
+    /* object-fit: cover; */
+}
+
+.blog-img-3 img {
+    height: 200px;
+    width: 200px;
+    /* position: relative;
+    left: 32rem;
+    top: -4em; */
+    border-radius: 50%;
+    margin-left: 20em;
+    border: 2px solid var(--bg-color-b);
+    /* object-fit: cover; */
+}
+
+.blog-content .right-img {
+    display: flex;
+    justify-content: center;
+    float: right;
+}
+
+.blog-content .h-hov h1 {
+    color: var(--heading-color);
+    cursor: pointer;
+}
+
+/* .blog-content .h-hov h1:hover {
+    border-bottom: 6px solid var(--bg-color-b);
+    border-left: 8px solid var(--bg-color-b);
+    width: 12%;
+    color: var(--text-color);
+    border-radius: 10px;
+} */
+
+.blog-content .anime-img {
+    transition: all .5s ease-in-out;
+}
+
+.blog-content .anime-img:hover {
+    transform: translateY(-20px);
+}
+
+div .blogs-pera {
+    font-size: 1.654rem;
+}
+
+.right-img .blog-img {
+    transition: all .5s ease-in-out;
+}
+
+.right-img .blog-img:hover {
+    transform: translateY(-20px);
+}
+/* end blog section */
+
+/* start contact section */
+
+.row {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-content .h-hov h1 {
+    color: var(--heading-color);
+    cursor: pointer;
+}
+
+/* .contact-content .h-hov h1:hover {
+    border-bottom: 6px solid var(--bg-color-b);
+    border-left: 8px solid var(--bg-color-b);
+    width: 22%;
+    color: var(--text-color);
+    border-radius: 10px;
+} */
+
+.contact-content .cont-box {
+    height: 90%;
+    max-width: 100%;
+    background-color: var(--bg-color-g);
+    text-align: center;
+    border-radius: 40px;
+}
+
+.cont-box input {
+    padding: .543rem;
+    width: 50%;
+    /* margin: 1rem; */
+    margin-top: 2em;
+    border-radius: 10px;
+    outline-color: var(--bg-color-h);
+}
+
+.contact-butn {
+    margin-top: .865rem;
+}
+
+.cont-icon {
+    font-size: 2.5rem;
+    color: var(--bg-color-b );
+    
+}
+
+div .tog-icon-1 i {
+    margin: 0 .85rem;
+    color: #000;
+}
+
+.tog-icon-1 .fac:hover {
+    color: rgb(0, 0, 255);
+}
+
+.tog-icon-1 .ins:hover {
+    /* color: rgb(212, 4, 195); */
+    color: #ee2a7b;
+}
+
+.tog-icon-1 .twi:hover {
+    color: rgb(241, 130, 3);
+}
+
+.tog-icon-1 .git:hover {
+    color: rgb(149, 151, 131);
+}
+
+div .pera span {
+    font-size: .3em;
+    line-height: .1px;
+}
+
+div .pera-1 span {
+    font-size: 1.875rem;
+    font-weight: 500;
+}
+
+/* end blog section */
